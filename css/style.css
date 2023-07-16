@@ -1,0 +1,339 @@
+
+*{
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior:smooth ;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--primary-color);
+    overflow-x: hidden;
+}
+/*7410aa , ce1040*/
+header{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+#theme{
+    width: 30px;
+    cursor: pointer;
+    margin-bottom: 18px;
+}
+:root{
+    --primary-color:linear-gradient(#6041eb, #e434a9f1);
+    --secondary-color:linear-gradient(#610096, #b60431);
+}
+
+.dark-theme{
+    --primary-color:linear-gradient(#610096, #b60431);
+    --secondary-color:linear-gradient(#6041eb, #e434a9f1);
+    /* af41eb */
+}
+#icon{
+    width: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+header .logo{
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+    padding: 14px 16px;
+    flex: 1;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    margin-left: 500px;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 7px 15px;
+    color: #fff;
+    border-radius: 15px;
+}
+header ul li a:hover , 
+header ul li a.active{
+    background: #fff;
+    color: #6041eb;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #a85bf0,transparent);
+    z-index: 1000;
+} 
+/*301b46*/
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img#tour{
+    z-index: 10;
+}
+#text{
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 10.5vw;
+    z-index: 9;
+}
+#btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 30px;
+    background: #fff;
+    color: #7410aa;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px);
+}
+.col{
+    flex-basis: 90%;
+    line-height: 89px;
+}
+
+h3{
+    color: #fff;
+    font-size: 70px;
+}
+p{
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: right;
+}
+
+.sec{
+    position: relative;
+    padding: 100px;
+    background: #a85bf0;
+    /* #a85bf0 ,  #731dc4 */
+}
+.sec h3{
+    font-size: 3em;
+    text-align: right;
+    color: #fff;
+}
+.sec p{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.images{
+    width: 40%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 500px;
+
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, right 1s;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .study{
+    right: 45%;
+}
+
+/*.site-main {
+    background: #b60431 no-repeat 0%;
+    background-position: 0% 50%;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}*/
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+    max-width: 1100px;
+}
+
+
+.container .product{
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 15px;
+    overflow: hidden;
+}
+
+.container .product .itemBox,
+.container .product .contentBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container .product .itemBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.container ul li{
+    list-style: none;
+    background: #eee;
+    padding: 12px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.container ul li.active{
+    background: #03a9f4;
+    color: #fff;
+}
+
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: no-wrap;
+}
+
+.product .itemBox{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    display: block;
+}
+
+.product .itemBox.hide{
+    display: none;
+}
+
+.product .itemBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .product .contentBx::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+    transition-delay: 0.5s;
+}
+
+.container .product:hover .contentBx::before{
+    transform: scaleX(1);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: left;
+    transition-delay: 0s;
+}
+
+.container .product .contentBx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .product .contentBx .content{
+    position: relative;
+    padding: 30px;
+    z-index: 1;
+    transition: 0.5s;
+    transform: translateX(-300px); 
+    transition-delay: 0s;
+}
+
+.container .product:hover .contentBx .content{
+    transform: translateX(0px);
+    transition-delay: 0.5s;
+}
+
+.container .product .contentBx .content h4{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.container .product .contentBx .content p{
+    font-size: 1em;
+    line-height: 1.4em;
+    font-weight: 300;
+    text-transform: uppercase;
+    z-index: 2;
+}
