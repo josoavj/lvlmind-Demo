@@ -1,5 +1,3 @@
-/* coucou! */
-
 /* io dark-theme*/
 var theme = document.getElementById("theme");
 
@@ -50,3 +48,4 @@ for(let i = 0; i<list.length; i++){
 
     })
 }
+
