@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
    
     margin: 0;
@@ -195,6 +195,10 @@ p{
 .text-uppercase{
     text-transform: uppercase;
 }*/
+.presentation{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
 
 .container{
     position: relative;
@@ -336,4 +340,32 @@ p{
     font-weight: 300;
     text-transform: uppercase;
     z-index: 2;
+}
+footer{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 900;
+    color: #fff;
+    display: inline;
+}
+footer div{
+        position: relative;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        text-align: center; 
+}
+footer div ul li{
+    list-style: none;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+footer div ul li a{
+    text-decoration: none;
+    font-size: small;
+    color: #fff;
 }
