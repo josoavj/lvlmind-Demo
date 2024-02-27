@@ -1,5 +1,9 @@
 # About 
-- Author: Koulie Nathalie
+>>>> Beta Version of the levelMind project: prototype where we share some information about levelmind
+- Author: [Koulie Nathalie](https://github.com/koulienathalie)
+ 
+## Used Tech 
+- HTML
+- CSS
+- JavaScript 
 
-# Tech: JS 
-- HTML, CSS
